@@ -4,8 +4,7 @@
         display: none;
     }
 
-    //@media screen and (min-width: 800px) {
-        @include screen(big){
+    @include screen(big) {
         display: flex;
         margin: 0 -15px;
 
