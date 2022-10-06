@@ -610,11 +610,11 @@ input:focus {
   font-size: 11px;
   color: #969696;
 }
-.user-details--big__content h2,
-.user-details--big__content h3 {
+.user-details--big .user-details__content h2,
+.user-details--big .user-details__content h3 {
   font-size: 13px;
 }
-.user-details--big__content p {
+.user-details--big .user-details__content p {
   font-size: 12px;
 }
 
