@@ -1,0 +1,21 @@
+$breakpoint: (
+    small: '(max-width: 800px)',
+    big: '(min-width: 800px)'
+);
+
+@mixin screen($size){
+    @if $size == small{
+        @media screen and #{map-get($breakpoint, small)}{
+            @content;
+        }
+    }
+    @else if $size == big{
+        @media screen and #{map-get($breakpoint, big)}{
+            @content;
+        }
+    }@else{
+        @media screen and #{$size}{
+            @content;
+        }
+    }
+}
