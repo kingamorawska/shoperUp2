@@ -4,14 +4,21 @@
     -webkit-font-smoothing: antialiased;
 }
 
-html, body {
+html,
+body {
     min-height: 100%;
 }
 
+html {
+    font-size: 62.5%; // 62.5% z 16px = 10px
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: $color-gray--lighter;
-    font-size: 14px;
+   // @include rem(1.4); 
+   font-size: pxToRem(14);
+
+    font-family: 'Roboto', sans-serif; 
+    background-color: $base-body-background;
 }
 
 img {
