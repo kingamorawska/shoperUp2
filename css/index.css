@@ -1,5 +1,5 @@
-.page-header__logo img {
-  float: left;
+.page-header__logo {
+  display: flex;
 }
 .page-header__logo::after {
   display: inline-block;
