@@ -1,3 +1,15 @@
+.page-header__logo img {
+  float: left;
+}
+.page-header__logo::after {
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  background: url("../images/tree.png") center no-repeat;
+  background-size: contain;
+  content: "";
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
