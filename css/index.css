@@ -1,3 +1,15 @@
+.page-header__logo {
+  display: flex;
+}
+.page-header__logo::after {
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  background: url("../images/tree.png") center no-repeat;
+  background-size: contain;
+  content: "";
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -314,14 +326,19 @@ template {
   -webkit-font-smoothing: antialiased;
 }
 
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
-  background-color: #fafafa;
-  font-size: 14px;
+  background-color: #F5F4D7;
 }
 
 img {
@@ -409,7 +426,7 @@ input:focus {
   margin-bottom: 30px;
   padding: 10px 0;
   background-color: #ffffff;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 2px solid #951F2B;
 }
 .page-header__wrapper {
   display: flex;
@@ -468,7 +485,7 @@ input:focus {
   border: 1px solid #dbdbdb;
 }
 .image-square.is-active {
-  border: 2px solid #dd2a7c;
+  border: 2px solid #951F2B;
 }
 .image-square.is-active img {
   border: 1px solid #ffffff;
@@ -480,7 +497,7 @@ input:focus {
   margin-bottom: 20px;
   padding: 15px 0;
   background-color: #ffffff;
-  border: 1px solid #dbdbdb;
+  border: 1px solid #535233;
   border-radius: 7px;
 }
 .stories-box__list {
@@ -545,7 +562,7 @@ input:focus {
 .post {
   margin-bottom: 20px;
   background-color: #ffffff;
-  border: 1px solid #dbdbdb;
+  border: 1px solid #535233;
   border-radius: 7px;
 }
 .post:last-child {

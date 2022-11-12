@@ -1,9 +1,11 @@
 /* STORIES BOX */
+$stories-box-border-color: #535233;
+
 .stories-box {
     margin-bottom: 20px;
     padding: 15px 0;
     background-color: $color-white;
-    @include border(1px, solid, $color-gray);
+    @include border(1px, solid, $stories-box-border-color);
     border-radius: 7px;
 
     &__list {

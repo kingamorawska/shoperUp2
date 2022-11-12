@@ -4,7 +4,7 @@
         display: none;
     }
 
-    @include screen(big) {
+    @include media(tablet) {
         display: flex;
         margin: 0 -15px;
 

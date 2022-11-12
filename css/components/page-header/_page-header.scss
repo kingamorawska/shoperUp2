@@ -1,9 +1,12 @@
 /* PAGE HEADER */
+$page-header-border-size: 2px;
+$page-header-border-color: #951F2B;
+
 .page-header {
     margin-bottom: 30px;
     padding: 10px 0;
     background-color: $color-white;
-    border-bottom: 1px solid $color-gray;
+    border-bottom: $page-header-border-size solid $page-header-border-color;
 
     &__wrapper {
         display: flex;
@@ -22,7 +25,7 @@
     &__search {
         display: none;
 
-        @media screen and (min-width: 800px) {
+        @include media(tablet) {
             display: block;
         }
     }

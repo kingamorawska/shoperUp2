@@ -1,0 +1,14 @@
+@mixin rem($remValue){
+    font-size: #{$remValue * $base-font-size}px;
+    font-size: #{$remValue}rem;
+}   
+
+@function pxToRem($pxValue){
+    $remValue: $pxValue / $base-font-size;
+
+    @if($pxValue == 0){
+        @return $remValue;
+    }@else{
+        @return #{$remValue}rem;
+    }
+}   

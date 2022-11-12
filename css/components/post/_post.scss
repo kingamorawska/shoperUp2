@@ -1,8 +1,10 @@
 /* POST */
+$post-border-color: #535233;
+
 .post {
     margin-bottom: 20px;
     background-color: $color-white;
-    border: 1px solid $color-gray;
+    border: 1px solid $post-border-color;
     border-radius: 7px;
 
     &:last-child {
