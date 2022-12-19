@@ -320,7 +320,7 @@ html, body {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #ffffff, #fafafa);
   font-size: 14px;
 }
 
@@ -406,10 +406,14 @@ input:focus {
 
 /* PAGE HEADER */
 .page-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   margin-bottom: 30px;
   padding: 10px 0;
   background-color: #ffffff;
   border-bottom: 1px solid #dbdbdb;
+  box-shadow: 0 0 5px #dbdbdb;
 }
 .page-header__wrapper {
   display: flex;
@@ -421,6 +425,14 @@ input:focus {
 }
 .page-header__logo img {
   display: block;
+}
+.page-header__logo::after {
+  content: "BETA";
+  padding: 0px 5px;
+  background: #3095f6;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
 }
 .page-header__search {
   display: none;

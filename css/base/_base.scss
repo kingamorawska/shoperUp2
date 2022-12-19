@@ -10,7 +10,7 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $color-gray--lighter;
+    background-image: linear-gradient(to bottom, $color-white, $color-gray--lighter);
     font-size: 14px;
 }
 
